@@ -1,0 +1,30 @@
+table {
+	vertical-align: middle;
+	background-color: rgba(255,255,255,0.75);
+}
+#corners {
+	border-radius: 25px;
+}
+table {
+	vertical-align: middle;
+	background-color: rgba(255,255,255,0.75);	
+}
+table td {
+	vertical-align: middle;
+	border-bottom-style: none;
+}
+table th {
+	text-transform: none;
+	border-bottom-style: none;
+	vertical-align: middle;
+}
+table:hover {
+	background-color: white;
+}
+main {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/87/Campustown%2C_Champaign%2C_Illinois.jpg");
+	background-size: cover;  
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right top; 
+}
