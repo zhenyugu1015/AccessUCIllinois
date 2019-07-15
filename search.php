@@ -1,9 +1,4 @@
 <?php
-/**
- * The template for displaying Search Results pages.
- *
- * @package OceanWP WordPress theme
- */
 
 get_header(); ?>
 
