@@ -1,9 +1,6 @@
 <?php get_header(); ?>
 
-	<?php do_action( 'ocean_before_content_wrap' ); ?>
-
 	<div id="content-wrap" class="container clr">
-		<?php do_action( 'ocean_before_primary' ); ?>
 
 		<html>
 			<head>
@@ -92,6 +89,5 @@
 			?>
 		</html>
 </div>
-	<?php do_action( 'ocean_after_content_wrap' ); ?>
 
 <?php get_footer(); ?>
