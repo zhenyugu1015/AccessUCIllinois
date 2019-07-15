@@ -1,29 +1,25 @@
 <?php get_header(); ?>
 
-	<?php do_action( 'ocean_before_content_wrap' ); ?>
-
 	<div id="content-wrap" class="container clr">
 
-		<?php do_action( 'ocean_before_primary' ); ?>
-
 		<?php 
-		$current = $_SERVER['REQUEST_URI'];
+			$current = $_SERVER['REQUEST_URI'];
 
-		$db = new mysqli("...", "...", 
-						 "...","..."); #confidential
-		if ($db->connect_error) {
-			echo "Connect Error: " . $db->connect_error;
-		}
-		$sql = "SELECT rid, link, acc_rating, cuisine, img_out, price, address, rating, 
-						desig_park, nearby_park, near_bus, lvl_ground_ent, wide_ramp_entrance,
-						short_ent_th, wide_doorway, ez_op_door, wide_oathway, accessible_condiments, 
-						lg_kneespace, menu_braille_lgprint, service_animal, aud_vis_alarm, acc_wc_sign, 
-						ez_op_wcdoor, wide_wcdoorway, wide_aisleway, wide_stall_door, toilet_ht, grab_bar, 
-						stall_length, stall_width, low_basin, sink_kneespace, access_soap, ez_faucet
-				FROM restaurants
-				WHERE link LIKE '%$current%'";
-		$result = mysqli_query($db,$sql);
-		$row = $result->fetch_assoc();
+			$db = new mysqli("...", "...", 
+							 "...","..."); #confidential
+			if ($db->connect_error) {
+				echo "Connect Error: " . $db->connect_error;
+			}
+			$sql = "SELECT rid, link, acc_rating, cuisine, img_out, price, address, rating, 
+					desig_park, nearby_park, near_bus, lvl_ground_ent, wide_ramp_entrance,
+					short_ent_th, wide_doorway, ez_op_door, wide_oathway, accessible_condiments, 
+					lg_kneespace, menu_braille_lgprint, service_animal, aud_vis_alarm, acc_wc_sign, 
+					ez_op_wcdoor, wide_wcdoorway, wide_aisleway, wide_stall_door, toilet_ht, grab_bar, 
+					stall_length, stall_width, low_basin, sink_kneespace, access_soap, ez_faucet
+					FROM restaurants
+					WHERE link LIKE '%$current%'";
+			$result = mysqli_query($db,$sql);
+			$row = $result->fetch_assoc();
 		?>
 
 		<html>
