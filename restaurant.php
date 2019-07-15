@@ -1,12 +1,8 @@
 <?php get_header(); ?>
 
-	<?php do_action( 'ocean_before_content_wrap' ); ?>
-
 	<div id="content-wrap" class="container clr">
 
-		<?php do_action( 'ocean_before_primary' ); ?>
-			
-			<html>
+		<html>
 			<head>
 				<link rel="stylesheet" type="text/css" href="restaurant.css">
 			</head>
@@ -62,7 +58,7 @@
 			}
 			?>
 			
-			</html>
+		</html>
 
 	</div>
 
