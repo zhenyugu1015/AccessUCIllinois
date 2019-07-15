@@ -1,6 +1,4 @@
-<?php
-
-get_header(); ?>
+<?php get_header(); ?>
 
 	<?php do_action( 'ocean_before_content_wrap' ); ?>
 
